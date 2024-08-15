@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                     binding.nameET.text.toString(),
                     binding.lastNameET.text.toString(),
                     binding.addressET.text.toString(),
-                    binding.telET.text.toString().toInt()
+                    binding.telET.text.toString()
                 )
             )
             Toast.makeText(this, "Добавлен пользователь ${binding.nameET.text}", Toast.LENGTH_LONG).show()

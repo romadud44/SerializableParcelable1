@@ -3,12 +3,12 @@ package com.example.serializableparcelable
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Person(val name: String?, val lastName:String?, val address: String?, val tel: Int ): Parcelable {
+data class Person(val name: String?, val lastName:String?, val address: String?, val tel: String? ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
         parcel.readString(),
-        parcel.readInt()
+        parcel.readString()
     ) {
     }
 
@@ -20,7 +20,7 @@ data class Person(val name: String?, val lastName:String?, val address: String?,
         parcel.writeString(name)
         parcel.writeString(lastName)
         parcel.writeString(address)
-        parcel.writeInt(tel)
+        parcel.writeString(tel)
     }
 
     override fun describeContents(): Int {

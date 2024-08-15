@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarMain"
@@ -15,6 +16,7 @@
         tools:ignore="Miss,MissingConstraints" />
 
     <TextView
+        android:textStyle="bold"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
+            android:textStyle="italic"
             android:id="@+id/nameET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,9 +44,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:hint="@string/text_name_ET"
-            android:textSize="12sp" />
+            android:textSize="20sp" />
 
         <EditText
+            android:textStyle="italic"
             android:id="@+id/lastNameET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,9 +55,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:hint="@string/text_lastName_ET"
-            android:textSize="12sp" />
+            android:textSize="20sp" />
 
         <EditText
+            android:textStyle="italic"
             android:id="@+id/addressET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,9 +66,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:hint="@string/text_address_ET"
-            android:textSize="12sp" />
+            android:textSize="20sp" />
 
         <EditText
+            android:textStyle="italic"
             android:id="@+id/telET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +77,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:hint="@string/text_tel_ET"
-            android:textSize="12sp" />
+            android:textSize="20sp"
+            />
 
     </LinearLayout>
 
@@ -83,6 +90,7 @@
         app:layout_constraintBottom_toTopOf="@+id/saveBTN"
         app:layout_constraintTop_toBottomOf="@+id/inputLL">
 <ListView
+
     android:id="@+id/mainLV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>

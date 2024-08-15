@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    tools:context=".SecondActivity"
+    android:background="@drawable/background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarSecond"
@@ -27,6 +28,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -34,6 +36,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -41,6 +44,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -48,6 +52,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -62,6 +67,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:textStyle="italic"
                 android:id="@+id/nameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,6 +76,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="italic"
                 android:id="@+id/lastNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,6 +85,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="italic"
                 android:id="@+id/addressTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,6 +94,7 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:textStyle="italic"
                 android:id="@+id/telTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,12 +106,5 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/backToMainBTN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_back_BTN"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
