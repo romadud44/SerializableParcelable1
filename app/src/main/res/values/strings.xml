@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SerializableParcelable</string>
+    <string name="text_info_TV">Введите данные пользователя</string>
+    <string name="text_name_ET">Имя</string>
+    <string name="text_lastName_ET">Фамилия</string>
+    <string name="text_address_ET">Адрес</string>
+    <string name="text_tel_ET">Телефон</string>
+    <string name="text_save_BTN">Сохранить</string>
+    <string name="text_back_BTN">Вернуться назад</string>
+    <string name="text_name">Имя</string>
+    <string name="text_last_name">Фамилия</string>
+    <string name="text_address">Адрес</string>
+    <string name="text_telephone">Телефон</string>
+</resources>
