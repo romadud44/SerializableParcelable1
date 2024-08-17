@@ -45,10 +45,7 @@ class MainActivity : AppCompatActivity() {
             )
             Toast.makeText(this, "Добавлен пользователь ${binding.nameET.text}", Toast.LENGTH_LONG).show()
             adapter.notifyDataSetChanged()
-            binding.nameET.text.clear()
-            binding.lastNameET.text.clear()
-            binding.addressET.text.clear()
-            binding.telET.text.clear()
+            clearFields()
         }
         binding.mainLV.onItemClickListener=
             AdapterView.OnItemClickListener { _, _, position, _ ->
@@ -65,5 +62,12 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    private fun clearFields() {
+        binding.nameET.text.clear()
+        binding.lastNameET.text.clear()
+        binding.addressET.text.clear()
+        binding.telET.text.clear()
     }
 }
